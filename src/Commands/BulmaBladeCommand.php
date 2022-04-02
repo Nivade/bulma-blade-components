@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Nvade\BulmaBlade\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class BulmaBladeCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'bulma-blade-components';
 
     public $description = 'My command';
 
