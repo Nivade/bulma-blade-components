@@ -368,3 +368,6 @@ dist
 /build/
 
 # End of https://www.toptal.com/developers/gitignore/api/composer,laravel,phpstorm,phpunit,intellij,node
+
+package.json
+package-lock.json
