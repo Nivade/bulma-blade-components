@@ -3,12 +3,12 @@
 namespace Nvade\BulmaBlade\Components\Card;
 
 use Illuminate\Contracts\View\View;
-use Illuminate\View\Component;
+use Nvade\BulmaBlade\Components\BladeComponent;
 
-class Index extends Component
+class Index extends BladeComponent
 {
     public function render(): View
     {
-        return view('components.card.index');
+        return view('nvade:bb::components.card.index');
     }
 }

@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
 
-class BulmaBladeCommand extends Command
+class PublishCommand extends Command
 {
     public $signature = 'bb:publish {component}
                         {--view : Publish only the view of the component}

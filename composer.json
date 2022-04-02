@@ -16,9 +16,13 @@
         }
     ],
     "require": {
-        "php": "^8.0",
-        "spatie/laravel-package-tools": "^1.9.2",
-        "illuminate/contracts": "^9.0"
+        "php": "^7.3|^8.0",
+        "ext-json": "*",
+        "illuminate/filesystem": "^7.0|^8.0|^9.0",
+        "illuminate/support": "^7.0|^8.0|^9.0",
+        "illuminate/view": "^7.0|^8.0|^9.0",
+        "illuminate/contracts": "^9.0",
+        "nesbot/carbon": "^2.38"
     },
     "require-dev": {
         "nunomaduro/collision": "^6.0",
@@ -30,13 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Nvade\\BulmaBlade\\": "src",
-            "Nvade\\BulmaBlade\\Database\\Factories\\": "database/factories"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Nvade\\BulmaBlade\\Tests\\": "tests"
+            "Nvade\\BulmaBlade\\": "src"
         }
     },
     "scripts": {
@@ -54,10 +52,7 @@
         "laravel": {
             "providers": [
                 "Nvade\\BulmaBlade\\BulmaBladeServiceProvider"
-            ],
-            "aliases": {
-                "BulmaBlade": "Nvade\\BulmaBlade\\Facades\\BulmaBlade"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
