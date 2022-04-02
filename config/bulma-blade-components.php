@@ -2,7 +2,11 @@
 // config for Nvade/BulmaBlade
 return [
     'components' => [
-        'card' => Nvade\BulmaBlade\Components\Card\Index::class
+        'breadcrumb' => Nvade\BulmaBlade\Components\Breadcrumb\Index::class,
+        'breadcrumb-item' => Nvade\BulmaBlade\Components\Breadcrumb\Item::class,
+        'card' => Nvade\BulmaBlade\Components\Card\Index::class,
+        'dropdown' => Nvade\BulmaBlade\Components\Dropdown\Index::class,
+        'dropdown-item' => Nvade\BulmaBlade\Components\Dropdown\Item::class,
     ],
     'prefix' => '',
     'assets' => [

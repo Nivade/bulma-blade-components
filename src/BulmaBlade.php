@@ -53,7 +53,9 @@ class BulmaBlade
 
         return collect(static::$scripts)->map(function (string $script) {
             return '<script src="'.$script.'"></script>';
-        })->implode(PHP_EOL);
+        })
+            ->add('@stack("bbScripts")')
+            ->implode(PHP_EOL);
     }
 
     private static function disableScripts(): bool
